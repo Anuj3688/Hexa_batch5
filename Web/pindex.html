@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Making System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./pstyle.css">
+</head>
+
+<body>
+    <div id="Main">
+        <div class="head">
+            <h1>Mini Project</h1>
+            <marquee behavior="" direction="">
+                <h2>Bill Making System</h2>
+            </marquee>
+        </div>
+        <div class="MainTable">
+            <table>
+                <tr>
+                    <td class="tds">
+                        <div class="ins">
+                            <h3>Click on the Product to add in list</h3>
+                        </div>
+                        <!-- All the Product List -->
+                        <div class="products">
+                            <input type="button" value="Product1" onclick="addPro(100,1)" id="p1">
+                            <input type="button" value="Product2" onclick="addPro(250,2)" id="p2">
+                            <input type="button" value="Product3" onclick="addPro(30,3)" id="p3">
+                            <input type="button" value="Product4" onclick="addPro(400,4)" id="p4">
+                            <input type="button" value="Product5" onclick="addPro(50,5)" id="p5"><br>
+                            <input type="button" value="Product6" onclick="addPro(199,6)" id="p6">
+                            <input type="button" value="Product7" onclick="addPro(230,7)" id="p7">
+                            <input type="button" value="Product8" onclick="addPro(300,8)" id="p8">
+                            <input type="button" value="Product9" onclick="addPro(190,9)" id="p9">
+                            <input type="button" value="Product10" onclick="addPro(160,10)" id="p10"><br>
+                            <input type="button" value="Product11" onclick="addPro(149,11)" id="p11">
+                            <input type="button" value="Product12" onclick="addPro(150,12)" id="p12">
+                            <input type="button" value="Product13" onclick="addPro(999,13)" id="p13">
+                            <input type="button" value="Product14" onclick="addPro(1200,14)" id="p14">
+                            <input type="button" value="Product15" onclick="addPro(4000,15)" id="p15"> <br>
+                            <input type="button" value="Product16" onclick="addPro(3000,16)" id="p16">
+                            <input type="button" value="Product17" onclick="addPro(3050,17)" id="p17">
+                            <input type="button" value="Product18" onclick="addPro(1050,18)" id="p18">
+                        </div>
+                    </td>
+                    <td class="tds">
+                        <!-- All the Bill list -->
+                        <div class="list">
+                            <h3>List of Products Added</h3><br>
+                            <div id="products">
+
+                            </div>
+                            <h3>The Total amount is</h3>
+                            <div id="total">
+                                0 Rs
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="head">
+                <input type="button" value="Pay Now" id="pay" onclick="pay()">
+            </div>
+        </div>
+    </div>
+    <script src="./pscript.js"></script>
+</body>
+
+</html>

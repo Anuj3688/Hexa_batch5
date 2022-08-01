@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="forr">
+        <label for="">
+            Enter your Salary
+        </label>
+        <br>
+        <input type="number" name="sal">
+        <input type="button" value="Submit" onclick="cal()">
+    </form>
+    <div name="bon" id="bo">
+
+    </div>
+    <script>
+        function cal() {
+            var j = document.forr.sal.value;
+          
+            if(j>5000){
+                console.log("Working");
+                document.getElementById("bo").innerText = "Bonus is "+j*1.1;
+            }else{
+                console.log("Working");
+                document.getElementById("bo").innerText = "Bonus is "+j*1.05;
+            }
+        }
+    </script>
+</body>
+</html>

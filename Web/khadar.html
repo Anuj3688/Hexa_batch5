@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Practice</title>
+
+</head>
+
+<body>
+    <form action="" name="formm">
+        <p>Enter sal</p>
+        <input type="text" id="t1">
+        <p>Enter bon</p>
+        <input type="text" id="t2">
+    </form>
+
+    <button onclick="sign()">cal</button>
+    <script>
+        function sign() {
+            let tId = document.getElementById("t1").value;
+            let tpass = document.getElementById("t2").value;
+            if (tId == "mom" & tpass == "dad") {
+                window.alert("welcome in java script");
+            }
+            else {
+                window.alert("Not authorised");
+            }
+        }
+    </script>
+</body>
+
+</html>

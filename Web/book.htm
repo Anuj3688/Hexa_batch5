@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .btn-group button {
+            background-color: #FF0000;
+            border: 2px black;
+            color: black;
+            padding: 10px 24px;
+            cursor: pointer;
+            float: left;
+        }
+
+
+        .btn-group:after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .btn-group button:not(:last-child) {
+            border-right: none;
+        }
+
+
+        .btn-group button:hover {
+            background-color: #0000FF;
+        }
+    </style>
+    <script>
+
+        let data = ["car1.jpg", "car2.jpg", "car3.jpg", "car4.jpg"];
+
+
+
+        function handleBtn1() {
+
+            let l = data.length - 1;
+
+            let k = Math.floor(Math.random() * l) + 0;
+            document.getElementById("pic1").src = data[k];
+        }
+        function handleBtn2() {
+
+            let l = data.length - 1;
+
+            let k = Math.floor(Math.random() * l) + 0;
+            document.getElementById("pic2").src = data[k];
+        }
+        function handleBtn3() {
+
+            let l = data.length - 1;
+
+            let k = Math.floor(Math.random() * l) + 0;
+            document.getElementById("pic3").src = data[k];
+        }
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column">
+            <img src="./freysteinn-g-jonsson-X4wXfbhUe_4-unsplash.jpg" alt="nature" style="width:100%" id="pic1">
+            <button onclick="handleBtn1()">Button1</button>
+        </div>
+
+
+        <div class="column">
+            <img src="./IMG20220728194046.jpg" alt="nature" style="width:100%" id="pic2">
+            <button onclick="handleBtn2()">Button2</button>
+        </div>
+
+        <div class="column">
+            <img src="./wolfgang-hasselmann-Uio8d-t5UC8-unsplash.jpg" alt="nature" style="width:100%" id="pic3">
+            <button onclick="handleBtn3()">Button3</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

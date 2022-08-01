@@ -1,0 +1,129 @@
+class Loop{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int size = sc.nextInt();
+		int[] a1=  new int[size];
+		for(int i=0 ; i<size ; i++){
+			a1[i]= sc.nextInt();
+		}
+		int a = sc.nextInt();
+		for(int i=0 ; i<size ; i++){
+			if(a1[i]==a){
+				for(int j=i ; j<size ; j++){
+					a[j] = a[j+1]; 	
+				}
+			}
+		}
+	}
+}
+
+class Loop{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int size = sc.nextInt();
+		int a = sc.nextInt();
+		int[] a1=  new int[size];
+		for(int i=0 ; i<size ; ){
+			int b = sc.nexInt();
+			if(b==a){
+				System.out.println("We can't add this number");
+			}else{
+				a1[i]=b ;
+				i++
+			}
+		}
+		
+		
+	}
+}
+
+
+class prime{
+	public static void main(String[] args){
+		int j = 0;
+		for(int i = 0 ;j<=100 ; i++){
+			if(prime(i)){
+				System.out.println(i);
+				j++
+			}
+		}
+	}
+	public static boolean prime(int n){
+		for(int i=2 ; i<(n/2+1) ; i++){
+			if(n%i==0)
+				return false;
+		}
+		return true;
+	}
+}
+
+
+class vowel{
+	public static void main(String[] args){
+		int a = 0;
+		Scanner sc = new Scanner(System.in);
+		String s = sc.next();
+		for(int i=0 ; i<s.length ; i++){
+			if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'
+				||s.charAt(i)=='A'||s.charAt(i)=='E'||s.charAt(i)=='I'||s.charAt(i)=='O'||s.charAt(i)=='U')
+				a++;
+		}
+		System.out.println(a);
+}
+}
+
+class vowel{
+	public static void main(String[] args){
+		
+		Scanner sc = new Scanner(System.in);
+		String s = sc.nextline();
+		for(int i=0 ; i<s.length ; ){
+			if(s.charAt(i)=='a'||s.charAt(i)=='e'||s.charAt(i)=='i'||s.charAt(i)=='o'||s.charAt(i)=='u'
+			||s.charAt(i)=='A'||s.charAt(i)=='E'||s.charAt(i)=='I'||s.charAt(i)=='O'||s.charAt(i)=='U')
+			a++;
+	
+			if(s.charAt(i)==" "){
+				System.out.println(a+" ");
+				a=0;
+			}
+		}
+		System.out.println(a);
+	}
+}
+
+class demo{
+	public static void cost(int num){
+		if(num<=100)
+			return 0;
+		if(num<=200)
+			return (num-100)*4;
+		if(num<=300)
+			return (400+((num-200)*3));
+		if(num<=400)
+			return 700+(400+((num-300)*3));
+		if(num<=500)
+			return 200+(300+(400+((num-400)*3)));
+
+	}
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int amount = 0;
+		System.out.println(cost(num));
+	}
+}
+
+
+1
+2
+4
+5
+7
+8
+10
+12
+13
+18
+19
+20
+finding the maximum age from 3 people. take age of 3 people display the number who has the maximum age

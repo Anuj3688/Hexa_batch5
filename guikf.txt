@@ -1,0 +1,109 @@
+class work1{
+	public static void main(String[] args){
+
+	}
+}
+class work2{
+	public static void main(String[] args){
+
+	}
+}
+class work3{
+	public static void main(String[] args){
+
+	}
+}
+class work4{
+	public static void main(String[] args){
+
+	}
+}
+class work5{
+	public static void main(String[] args){
+
+	}
+}
+class work6{
+	public static void main(String[] args){
+
+	}
+}
+class work7{
+	public static void main(String[] args){
+
+	}
+}
+class work8{
+	public static void main(String[] args){
+
+	}
+}
+class work9{
+	public static void main(String[] args){
+
+	}
+}
+class work10{
+	public static void main(String[] args){
+
+	}
+}
+class work11{
+	public static void main(String[] args){
+
+	}
+}
+class work12{
+	public static void main(String[] args){
+
+	}
+}
+class work13{
+	public static void main(String[] args){
+
+	}
+}
+class work14{
+	public static void main(String[] args){
+
+	}
+}
+class work15{
+	public static void main(String[] args){
+
+	}
+}
+class work16{
+	public static void main(String[] args){
+
+	}
+}
+class work17{
+	public static void main(String[] args){
+
+	}
+}
+class work18{
+	public static void main(String[] args){
+
+	}
+}
+class work19{
+	public static void main(String[] args){
+
+	}
+}
+
+
+2
+3
+5
+8
+25
+27
+28
+29
+35
+38
+43
+44

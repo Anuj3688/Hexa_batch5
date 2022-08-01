@@ -1,0 +1,594 @@
+package com.cwa.base;
+
+import java.util.Scanner;
+
+public class Work1 {
+	public static void main(String[] args) {
+		System.out.println("Task 1");
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		if (a==b) {
+			System.out.println("Number 1 and Number 2 are equal");
+		}else {
+			System.out.println("Number 1 and Number 2 are not equal");
+		}
+	}
+}
+
+
+
+package com.cwa.base;
+
+import java.util.Scanner;
+
+public class Work2 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a = sc.nextInt();
+		if(a%2==0)
+			System.out.println("Even Number");
+		else
+			System.out.println("Odd Number");
+	}
+
+}
+
+
+package com.cwa.base;
+
+import java.util.Scanner;
+
+public class Work3 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int age = sc.nextInt();
+		if (age>18) {
+			System.out.println("You can vote");
+		}else
+			System.out.println("You can't vote");
+	}
+}
+
+
+
+package com.cwa.base;
+
+import java.util.Scanner;
+
+public class work4 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int year = sc.nextInt();
+		if(year%4==0) {
+			if(year%400==0) {
+				if(year%100==0) {
+					System.out.println("IT is a leap year");
+				}
+			}
+		}else
+			System.out.println("Not a leap year");
+	}
+}
+package com.cwa.base;
+
+import java.util.Scanner;
+
+public class Work6 {
+	public static void main(String[] args) {
+		int a, b, c, largest, temp;
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter the first number:");
+		a = sc.nextInt();
+		System.out.println("Enter the second number:");
+		b = sc.nextInt();
+		System.out.println("Enter the third number:");
+		c = sc.nextInt();
+
+		temp = a > b ? a : b;
+
+		largest = c > temp ? c : temp;
+
+		System.out.println("The largest number is: " + largest);
+	}
+}
+
+import java.util.Scanner;
+ class work8
+{
+	public static void main(String [] args)
+	{
+		Scanner sc = new Scanner(System.in);
+		int mat=sc.nextInt();
+		int phy=sc.nextInt();
+		int che=sc.nextInt();
+		int t3=mat+phy+che;
+		int t2=mat+phy;
+		if(mat>=65 && phy>=55 && che>=50 || t3>=190 ||t2>=140)
+		{
+			System.out.println("You are eligible");
+		}
+		else
+		{
+			System.out.println("You are not eligible");
+		}
+	}
+}
+
+public class Work9 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int roll = sc.nextInt();
+		String name = sc.nextLine();
+		int sub1 = sc.nextInt();
+		int sub2 = sc.nextInt();
+		int sub3 = sc.nextInt();
+		int total = sub1 + sub2 + sub3;
+		int percent = (total / 300) * 100;
+		if (percent > 50)
+			System.out.println("Divison A");
+		else
+			System.out.println("Divison B");
+	}
+}
+
+import java.util.Scanner();
+
+public class Work10 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int Temp = sc.nextInt();
+		if (Temp < 0)
+			System.out.println("Freezing weather");
+		else if (Temp >= 0 && Temp <= 10)
+			System.out.println("Very cold weather");
+		else if (Temp > 10 && Temp <= 20)
+			System.out.println("cold weather");
+		else if (Temp > 20 && Temp <= 30)
+			System.out.println("Normal");
+		else if (Temp > 20 && Temp <= 30)
+			System.out.println("Hot");
+		else
+			System.out.ptintln("Very hot");
+	}
+}
+
+
+1. Write a Java program to accept two integers and check whether they are equal or not.Program:
+
+import java.util.Scanner;
+
+public class Equal
+{
+public static void main(String [] args)
+{
+Scanner sc = new Scanner(System.in);
+int a = sc.nextInt();
+int b = sc.nextInt();
+if(a==b)
+System.out.println(a+" ,"+b+" are equal");
+else
+System.out.println(a+" ,"+b+" are not equal");
+}
+}
+Output::
+1)a=15
+ b=15
+ then 15,15 are equal
+2)a=15
+ b=4
+ then 15,4 are not equal
+2.Write a Java program to check whether a given number is even or odd
+Program::
+import java.util.Scanner;
+
+public class Number {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		if (n % 2 == 0)
+			System.out.println(n + " is even number ");
+		else
+			System.out.println(n + " is odd number ");
+	}
+}Output::1)n=5 then 5
+
+is odd number 2)n=22258 then 22258
+is even number 3)
+Write a
+Java program
+to find
+whether a
+given year
+is a
+leap year
+or not.Program
+::
+import java.util.Scanner;
+
+public class Leap {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int yr = sc.nextInt();
+		if (yr % 4 == 0) {
+			if (yr % 400 == 0) {
+				if (yr % 100 == 0)
+					System.out.println(yr + " is leap year ");
+			}
+		} else
+			System.out.println(yr + " is not leap year ");
+	}
+}Output::1)yr=2000 then 2000
+
+is leap year 2)yr=2022 then 2022
+is not
+a leap year 5.
+Write a
+C program
+to read
+the age
+of a
+candidate and
+determine whether
+it is eligible for
+casting his/her own vote.Program
+::
+import java.util.Scanner;
+
+public class Vote {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int age = sc.nextInt();
+		if (age >= 18) {
+			System.out.println("You are eligible for voting ");
+		} else
+			System.out.println("You are not eligible for voting ");
+	}
+}Output::1)age=21
+
+then You
+are eligible for voting 2)age=10
+then You
+are not eligible for voting 7.
+Write a
+Java program
+to accept
+the height
+of a
+person in
+centimeter and
+categorize the
+person according
+to their height.Program
+::
+import java.util.Scanner;
+
+public class Height {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int ht = sc.nextInt();
+		if (ht < 150)
+			System.out.println("Person is Short");
+		else if (ht >= 150 && ht < 165)
+			System.out.println("Person is with Avg height");
+		else if (ht >= 165)
+			System.out.println("Person is tall");
+	}
+}Output::1)ht=155
+
+then Person
+is with
+Avg height 8.
+Write a
+Java program
+to find
+the largest
+of three numbers.Program
+::
+import java.util.Scanner;
+
+public class Height {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
+		if ((a > b) && (a > c))
+			System.out.println(a + " is bigger");
+		if ((b > a) && (b > c))
+			System.out.println(b + " is bigger");
+		if ((c > a) && (c > a))
+			System.out.println(c + " is bigger");
+	}
+}Output::1)a=10,b=55,c=100 then 100
+
+is bigger 10.
+Write a
+C program
+to find
+the eligibility
+of admission for
+a professional
+course based
+on the
+following criteria:
+Eligibility Criteria:
+Marks in Maths>=65
+and Marks
+in Phy>=55
+and
+Marks
+in Chem>=50
+and
+Total
+in all
+three subject>=190
+or Total
+in Maths
+and Physics>=140-------------------------------------Program
+::
+import java.util.Scanner;
+
+public class Eligible {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int mat = sc.nextInt();
+		int phy = sc.nextInt();
+		int che = sc.nextInt();
+		int t3 = mat + phy + che;
+		int t2 = mat + phy;
+		if (mat >= 65 && phy >= 55 && che >= 50 || t3 >= 190 || t2 >= 140) {
+			System.out.println("You are eligible");
+		} else {
+			System.out.println("You are not eligible");
+		}
+	}
+}Output::mat=70,phy=60,che=75
+
+then You
+are eligible-----------------------------------------------------------------------------------------------------12.
+Write a
+Java program
+to read
+roll no, name
+and marks
+of three
+subjects and
+calculate the total,
+percentage and
+division Program
+::
+import java.util.Scanner;
+
+public class Student {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int roll = sc.nextInt();
+		String name = sc.nextLine();
+		int sub1 = sc.nextInt();
+		int sub2 = sc.nextInt();
+		int sub3 = sc.nextInt();
+		int total = sub1 + sub2 + sub3;
+		int percent = (total / 300) * 100;
+		if (percent > 50)
+			System.out.println("Divison A");
+		else
+			System.out.println("Divison B");
+	}
+}Output::sub1=75,sub2=86,sub3=66
+
+then Divison A--------------------------------------------------------------------------------------------------------13.
+Write a
+C program
+to read
+temperature in
+centigrade and
+display a
+suitable message
+according to
+temperature state
+below
+Temp<0
+then Freezing
+weather
+Temp 0-10
+then Very
+Cold weather Temp 10-20
+then Cold
+weather
+Temp 20-30
+then Normal
+in Temp Temp 30-40
+then Its
+Hot
+Temp>=40
+then Its
+Very Hot Program
+::
+import java.util.Scanner();
+
+public class Temp {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int Temp = sc.nextInt();
+		if (Temp < 0)
+			System.out.println("Freezing weather");
+		else if (Temp >= 0 && Temp <= 10)
+			System.out.println("Very cold weather");
+		else if (Temp > 10 && Temp <= 20)
+			System.out.println("cold weather");
+		else if (Temp > 20 && Temp <= 30)
+			System.out.println("Normal");
+		else if (Temp > 20 && Temp <= 30)
+			System.out.println("Hot");
+		else
+			System.out.ptintln("Very hot");
+	}
+}--------------------------------------------------------------------------------------------------18.
+
+Write a
+C program
+to calculate
+profit and
+loss on
+a transaction.Program
+::
+import java.util.Scanner();
+
+public class calc
+{
+public static void main(String [] args)
+{
+Scanner sc= new Scanner(System.in);
+int sp=sc.nextInt();
+int cp = sc.nextInt();
+if(sp<cp)
+Profit=sp-cp;
+System.out.println("Profit "+Profit);
+else
+loss=cp-sp;
+System.out.println("loss "+loss);
+}
+}
+Output::
+sp=700,cp=500
+profit 200
+--------------------------------------------------------------------------------------------------------
+---
+19. Write a program in C to calculate and print the Electricity bill of a
+given customer.
+The customer id., name and unit consumed by the user should be taken
+from the keyboard and
+display the total amount to pay to the customer. The charge are as
+follow
+Unit Charge/unit
+upto 199 @1.20
+200 and above but less than 400 @1.50
+400 and above but less than 600 @1.80
+600 and above @2.00
+If bill exceeds Rs. 400 then a surcharge of 15% will be charged and the
+minimum bill should be of Rs. 100/-
+Program:
+import java.util.Scanner();
+
+public class Elec {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int custId = sc.nextInt();
+		String name = sc.nextLine();
+		int units = sc.nextInt();
+		float cost = 0;
+		if (units <= 199)
+			cost = units * 1.20;
+		else if (units >= 200 && units < 400)
+			cost = (199) * 1.20 + (units - 199) * 1.50;
+		else if (units >= 400 && units < 600)
+			cost = 199 * 1.20 + 201 * 1.50 + (units - 400) * 1.80;
+		else
+			cost = 199 * 1.20 + 201 * 1.50 + 201 * 1.80 + (units - 601) * 2.00;
+		System.out.println("Total bill " + cost);
+		if (cost > 400) {
+			cost = cost + (15 / 100) * (cost);
+			if (cost < 100) {
+				cost = 100;
+			}
+		}
+	}
+}-------------------------------------------------------------------------------------------------------------
+
+Write a
+program in
+Javaaccept a
+grade and
+declare the
+equivalent description
+Grade Description
+E Excellent
+V Very
+Good G
+Good A
+Average F
+Fail Program
+::
+import java.util.Scanner;
+
+class Work11 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char ch = sc.next().charAt(0);
+		switch (ch) {
+		case 'E':
+			System.out.println("Excellent");
+			break;
+		case 'V':
+			System.out.println("Very Good");
+			break;
+		case 'A':
+			System.out.println("Average");
+			break;
+		case 'G':
+			System.out.println("Good");
+			break;
+		case 'F':
+			System.out.println("Fail");
+			break;
+		}
+	}
+}
+
+import java.util.Scanner();
+
+public class Work12 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int custId = sc.nextInt();
+		String name = sc.nextLine();
+		int units = sc.nextInt();
+		float cost = 0;
+		if (units <= 199)
+			cost = units * 1.20;
+		else if (units >= 200 && units < 400)
+			cost = (199) * 1.20 + (units - 199) * 1.50;
+		else if (units >= 400 && units < 600)
+			cost = 199 * 1.20 + 201 * 1.50 + (units - 400) * 1.80;
+		else
+			cost = 199 * 1.20 + 201 * 1.50 + 201 * 1.80 + (units - 601) * 2.00;
+		System.out.println("Total bill " + cost);
+		if (cost > 400) {
+			cost = cost + (15 / 100) * (cost);
+			if (cost < 100) {
+				cost = 100;
+			}
+		}
+	}
+}
+
+import java.util.Scanner;
+
+public class Work14 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char ch = sc.next().charAt(0);
+		switch (ch) {
+		case 'E':
+			System.out.println("Excellent");
+			break;
+		case 'V':
+			System.out.println("Very Good");
+			break;
+		case 'A':
+			System.out.println("Average");
+			break;
+		case 'G':
+			System.out.println("Good");
+			break;
+		case 'F':
+			System.out.println("Fail");
+			break;
+		}
+	}
+}
+

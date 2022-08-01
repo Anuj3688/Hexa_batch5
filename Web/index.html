@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Let's Do some Coding</h1>
+
+    </div>
+    <form action="">
+        <label for="">Enter you Dept</label>
+        <input type="text" id="dept">
+        <label for="">Enter Your Salary</label>
+        <input type="text" id="sal">
+        <input type="button" value="Submit" onclick="Mongo()">
+    </form>
+
+    <div id="Mongo">
+
+    </div>
+
+    <script>
+        function Mongo() {
+            let sal = document.getElementById("sal").value;
+            let dept  = document.getElementById("dept").value
+            console.log("Working");
+            if(sal>15000){
+                let bonus = sal*1.5
+                console.log(sal*1.5);
+                document.getElementById("Mongo").innerText = "10% raise "+dept+" "+bonus;
+            }
+        }
+    </script>
+</body>
+</html>

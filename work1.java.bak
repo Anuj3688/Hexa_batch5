@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class work1
+{
+	public static double bonus(double sal){
+		if(sal<=5000)
+			return sal*0.05;
+		if(sal>5000 && sal<=10000)
+			return sal*0.1;
+		if(sal>10000 && sal<=15000)
+			return sal*0.15;
+		
+		return sal*0.2;
+		
+	}
+	public static void main(String arggs[]){
+		Scanner sc = new Scanner(System.in);
+		double salary = sc.nextDouble();
+		System.out.println("Your Bonus is "+(bonus(salary)+salary));
+	}
+
+}
